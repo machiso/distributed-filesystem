@@ -1,4 +1,4 @@
-package org.mac.dfs;
+package org.mac.fds.namenode;
 
 import lombok.Getter;
 import lombok.Setter;

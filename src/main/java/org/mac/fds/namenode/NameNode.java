@@ -1,4 +1,4 @@
-package org.mac.dfs;
+package org.mac.fds.namenode;
 
 public class NameNode {
 
@@ -6,6 +6,11 @@ public class NameNode {
 
     //负责管理元数据的核心组件
     private FSNamesystem fsNamesystem;
+
+    /**
+     * 负责管理集群中所有的Datanode的组件
+     */
+    private DataNodeManager datanodeManager;
 
     //NameNode对外提供rpc接口的server，可以响应请求
     private NameNodeRpcServer nameNodeRpcServer;
@@ -16,7 +21,8 @@ public class NameNode {
 
     public void initialize(){
         this.fsNamesystem = new FSNamesystem();
-        this.nameNodeRpcServer = new NameNodeRpcServer(this.fsNamesystem);
+        this.datanodeManager = new DataNodeManager();
+        this.nameNodeRpcServer = new NameNodeRpcServer(this.fsNamesystem,this.datanodeManager);
         this.nameNodeRpcServer.start();
     }
 

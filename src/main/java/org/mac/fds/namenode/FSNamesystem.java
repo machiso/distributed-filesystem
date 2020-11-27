@@ -1,4 +1,4 @@
-package org.mac.dfs;
+package org.mac.fds.namenode;
 
 /**
  * 负责管理元数据的核心组件
