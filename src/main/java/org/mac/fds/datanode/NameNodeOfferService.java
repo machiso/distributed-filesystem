@@ -6,7 +6,7 @@ import java.util.concurrent.CountDownLatch;
 
 /**
  * 负责跟一组NameNode进行通信的OfferServie组件
- * @author zhonghuashishan
+ * @author machi
  *
  */
 public class NameNodeOfferService {

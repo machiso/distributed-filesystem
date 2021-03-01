@@ -8,7 +8,7 @@ import java.util.concurrent.ConcurrentHashMap;
 
 /**
  * 这个组件，就是负责管理集群里的所有的datanode的
- * @author zhonghuashishan
+ * @author machi
  *
  */
 public class DataNodeManager {
@@ -50,7 +50,7 @@ public class DataNodeManager {
 	
 	/**
 	 * datanode是否存活的监控线程
-	 * @author zhonghuashishan
+	 * @author machi
 	 *
 	 */
 	class DataNodeAliveMonitor extends Thread {

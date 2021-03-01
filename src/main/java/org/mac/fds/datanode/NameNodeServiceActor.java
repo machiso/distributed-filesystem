@@ -4,7 +4,7 @@ import java.util.concurrent.CountDownLatch;
 
 /**
  * 负责跟一组NameNode中的某一个进行通信的线程组件
- * @author zhonghuashishan
+ * @author machi
  *
  */
 public class NameNodeServiceActor {
@@ -23,7 +23,7 @@ public class NameNodeServiceActor {
 
 	/**
 	 * 负责注册的线程
-	 * @author zhonghuashishan
+	 * @author machi
 	 *
 	 */
 	class RegisterThread extends Thread {
@@ -59,7 +59,7 @@ public class NameNodeServiceActor {
 
 	/**
 	 * 负责心跳的线程
-	 * @author zhonghuashishan
+	 * @author machi
 	 *
 	 */
 	class HeartbeatThread extends Thread {

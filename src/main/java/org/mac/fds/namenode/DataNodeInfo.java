@@ -5,7 +5,7 @@ import lombok.Setter;
 
 /**
  * 用来描述datanode的信息
- * @author zhonghuashishan
+ * @author machi
  *
  */
 @Getter

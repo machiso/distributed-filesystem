@@ -2,7 +2,7 @@ package org.mac.fds.datanode;
 
 /**
  * DataNode启动类
- * @author zhonghuashishan
+ * @author machi
  *
  */
 public class DataNode {

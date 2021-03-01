@@ -3,7 +3,7 @@ package org.mac.fds.namenode;
 
 /**
  * NameNode的rpc服务的接口
- * @author zhonghuashishan
+ * @author machi
  *
  */
 public class NameNodeRpcServer {
