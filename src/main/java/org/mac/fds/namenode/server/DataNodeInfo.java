@@ -8,8 +8,20 @@ package org.mac.fds.namenode.server;
 public class DataNodeInfo {
 
 	private String ip;
+
 	private String hostname;
-	
+
+	//上次心跳发送的时间
+	private long lastHeatBeatTime;
+
+	public long getLastHeatBeatTime() {
+		return lastHeatBeatTime;
+	}
+
+	public void setLastHeatBeatTime(long lastHeatBeatTime) {
+		this.lastHeatBeatTime = lastHeatBeatTime;
+	}
+
 	public DataNodeInfo(String ip, String hostname) {
 		this.ip = ip;
 		this.hostname = hostname;
